@@ -50,10 +50,15 @@ input{
   height: 40vh;
   border-radius: 2rem;
   margin: 1rem;
+  transition: 200ms ease-in;
+  cursor: pointer;
 }
 .pokecard img{
   width: 50%;
   height: 20vh;
+}
+.pokecard:hover{
+  transform: scale(1.1);
 }
 .poke-name{
   margin-top: 1rem;
