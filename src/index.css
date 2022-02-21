@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
+}
+.cont{
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 70vh;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(0,150,50,1) 37%, rgba(0,212,255,1) 100%);
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 10vh;
+  background: #5000d1;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+input{
+  width: 20%;
+  height: 3vh;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+  margin-top: 2rem;
+  border: 1px solid black;
+}
+.pokecard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 20%;
+  height: 40vh;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+.pokecard img{
+  width: 50%;
+  height: 20vh;
+}
+.poke-name{
+  margin-top: 1rem;
+  font-size: 1.35rem;
+  text-transform: capitalize;  
+}
+.poke-text{
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+@media screen and (max-width:768px) {
+  .pokecard{
+    width: 80%;
+  }
+  input{
+    width: 70%;
+  }
+  .cont{
+    margin-top: 1rem;
+  }
+  
+}
