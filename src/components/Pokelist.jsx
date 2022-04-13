@@ -17,7 +17,6 @@ const Pokelist = () => {
         setTimeout(()=>{setPokemon([...pokemonlist]);setLoading(false)},200);
     },[])
   return (
-
         <>
             {loading ? <div className="cont"><PropagateLoader color={"#123abc"} loading={loading}/></div> : 
             <div className='cont'>
